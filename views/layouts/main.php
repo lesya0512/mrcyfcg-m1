@@ -50,6 +50,7 @@ AppAsset::register($this);
             $items [] =  ['label' => 'Все пользователи', 'url' => ['/user/index']];
         } 
         else{ 
+            $items [] =  ['label' => 'Мои заявления', 'url' => ['/statement/index']]; 
             $items [] =  ['label' => 'Формирование заявлений', 'url' => ['/statement/create']]; 
         } 
  
