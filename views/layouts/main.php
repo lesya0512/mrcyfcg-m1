@@ -47,6 +47,7 @@ AppAsset::register($this);
     else{ 
         if(Yii::$app->user->identity->username == 'copp'){ 
             $items [] =  ['label' => 'Все заявки', 'url' => ['/statement/index']]; 
+            $items [] =  ['label' => 'Все пользователи', 'url' => ['/user/index']];
         } 
         else{ 
             $items [] =  ['label' => 'Формирование заявлений', 'url' => ['/statement/create']]; 
